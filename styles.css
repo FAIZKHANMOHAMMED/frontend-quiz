@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  background-image: url('background.jpg');
+}
+.top-bar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 60px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  padding: 0 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+  box-sizing: border-box;
+  min-height: 100px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-text {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.hamburger {
+  font-size: 60px;
+}
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:200px;
+}
+
+.header {
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #333333;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 10px 0;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 20%; 
+  height: 100%;
+  background-color: #4caf50;
+}
+.course-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.courseItem {
+  border-bottom: 1px solid #ddd;
+  max-width: 900px;
+  width: 90%;
+}
+.collapsible {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f8f8f8;
+  color:#3333;
+  cursor: pointer;
+  padding: 20px; 
+  font-size: 18px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: left;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.collapsible.active .caret {
+  transform: rotate(180deg); 
+}
+.collapsible .icon, .collapsible .lock-icon {
+  font-size: 10px;
+  margin-right: 10px;
+  background-color: rgb(156, 156, 244); 
+  border-radius: 5px; 
+  padding: 5px; 
+  font-size: 24px;
+}
+.content {
+  display: none;
+  padding: 15px;
+  background-color: #ffff;
+  color: #666;
+  font-size: 14px;
+}
+.courseItem.completed {
+  background-color:#f1f1f1;
+  color: #000;
+}
+.courseItem.completed h2 {
+  color: #f1f1f1;
+}
+.courseItem.incomplete {
+  background-color: #f8f8f8;
+  color: #4caf50;
+}
+.courseItem.incomplete h2 {
+  color: #4caf50; 
+}
